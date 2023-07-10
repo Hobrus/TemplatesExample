@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block title %}Third page{% endblock %}
+
+{% block content %}
+    <p>Вот ваш список объектов:</p>
+    <ul>
+        {% for obj in test_model %}
+            <li>{{ obj }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
